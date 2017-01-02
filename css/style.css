@@ -1,0 +1,358 @@
+/*头部*/
+.head {
+  width: 100%;
+  height: 13%;
+  position: fixed;
+  z-index: 9999;
+}
+.head-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+  left: 10px;
+  top: 10px;
+}
+/*关键帧动画*/
+.run {
+  animation: run 5s linear infinite;
+}
+@keyframes run {
+  0% {
+    transform: rotate(0);
+    box-shadow: 0 0 3px #1FAEFF;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0 0 20px #1FAEFF;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 3px #1FAEFF;
+  }
+}
+.boxShadow {
+  animation: boxShadow 1s linear infinite;
+}
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0 0 5px #1FAEFF;
+  }
+  50% {
+    box-shadow: 0 0 30px #1FAEFF;
+  }
+  100% {
+    box-shadow: 0 0 5px #1FAEFF;
+  }
+}
+.head-img img {
+  width: 100%;
+  height: 100%;
+}
+.resume {
+  heigth: 80px;
+  width: 100px;
+  text-align: center;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.resume .snake {
+  height: 2px;
+  width: 100px;
+  position: relative;
+}
+.resume .snake-hide {
+  width: 100px;
+  height: 12px;
+  position: absolute;
+  top: -5px;
+  right: 88px;
+  background-color: #fff;
+  animation: snake 5s linear infinite;
+}
+.resume .snake-head {
+  width: 0px;
+  height: 0px;
+  border-right: 6px solid transparent;
+  border-top: 6px solid red;
+  border-left: 6px solid red;
+  border-bottom: 6px solid red;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: absolute;
+  right: 0;
+}
+.snake-headOver {
+  width: 0px;
+  height: 0px;
+  border-right: 6px solid red;
+  border-top: 6px solid red;
+  border-left: 6px solid red;
+  border-bottom: 6px solid red;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: absolute;
+  right: 0;
+}
+@keyframes snake {
+  0% {
+    right: 100px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+.resume .snake-line {
+  height: 4px;
+  display: inline-block;
+  float: left;
+  width: 4px;
+  background-color: #ff0000;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+.resume .en {
+  height: 38px;
+  line-height: 38px;
+}
+.resume .cn {
+  height: 40px;
+  line-height: 40px;
+}
+/*导航*/
+.head-right {
+  height: 80px;
+  line-height: 80px;
+  padding-right: 30px;
+  overflow: hidden;
+}
+.head-right li {
+  float: left;
+  position: relative;
+}
+.head-right li a {
+  color: #000;
+  display: block;
+  padding: 0 20px;
+}
+.head-right li .bgcolor {
+  content: '';
+  width: 72px;
+  height: 80px;
+  bottom: -75px;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.head-right li:nth-child(1) .bgcolor {
+  background-color: #b9d329;
+}
+.head-right li:nth-child(2) .bgcolor {
+  background-color: #c0ebf7;
+}
+.head-right li:nth-child(3) .bgcolor {
+  background-color: #79d9f3;
+}
+.head-right li:nth-child(4) .bgcolor {
+  background-color: #fab4cc;
+}
+/*正文部分*/
+.cont-img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transition: all 1s;
+  position: fixed;
+  top: 250px;
+  left: 50%;
+  margin-left: -77px;
+}
+.cont-img ul li {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.cont-img ul li {
+  border-radius: 50%;
+}
+.cont-img ul img {
+  width: 150px;
+  height: 150px;
+}
+.cont-img ul li.img {
+  float: left;
+}
+/*个人简介页面*/
+.information {
+  width: 800px;
+  position: fixed;
+  top: 500px;
+  left: 50%;
+  margin-left: -400px;
+  text-align: center;
+}
+.information p {
+  height: 40px;
+  line-height: 40px;
+}
+.information .motto {
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+}
+.information .motto:after {
+  content: "";
+  width: 800px;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  bottom: 0;
+}
+.information .email {
+  font-weight: bold;
+}
+.mac {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  top: 700px;
+  text-align: center;
+  z-index: 9999;
+}
+.mac .item-mac {
+  float: left;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.mac .macImg {
+  width: 780px;
+  display: inline-block;
+}
+.chart {
+  width: 780px;
+  height: 500px;
+  position: relative;
+  top: 100px;
+  left: 50%;
+  margin-left: -390px;
+}
+.chart .item-chart {
+  height: 40px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.chart .item-chart:nth-child(1) {
+  width: 750px;
+  background-color: #d6efff;
+  color: #2a7da9;
+  border-left: 2px solid #3498db;
+}
+.chart .item-chart:nth-child(2) {
+  width: 700px;
+  background-color: #d6efff;
+  color: #2a7da9;
+  border-left: 2px solid #3498db;
+}
+.chart .item-chart:nth-child(3) {
+  width: 600px;
+  background-color: #eaf6d0;
+  color: #6e9c0f;
+  border-left: 2px solid #80bd01;
+}
+.chart .item-chart:nth-child(4) {
+  width: 600px;
+  background-color: #eaf6d0;
+  color: #6e9c0f;
+  border-left: 2px solid #80bd01;
+}
+.chart .item-chart:nth-child(5) {
+  width: 450px;
+  background-color: #fff6dd;
+  color: #ff742a;
+  border-left: 2px solid #fdbc40;
+}
+.chart .item-chart .txt {
+  font-style: normal;
+  padding-left: 10px;
+}
+.live {
+  padding-top: 400px;
+}
+.live .year {
+  border-top: 3px solid #ccc;
+  position: relative;
+  width: 480px;
+  height: 400px;
+  float: left;
+}
+.live .year h3 {
+  position: absolute;
+  top: -49px;
+  left: 50px;
+}
+.live .year h3:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #3498db;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 15px;
+  top: 38px;
+}
+.month-list {
+  position: absolute;
+  width: 380px;
+  height: 300px;
+  left: 100px;
+  top: 20px;
+  padding-left: 20px;
+}
+.month-list dt {
+  font-size: 20px;
+  font-weight: bold;
+  height: 36px;
+  line-height: 36px;
+}
+.live .year:nth-child(odd) dt {
+  color: #f53638;
+}
+.live .year:nth-child(even) dt {
+  color: #008558;
+}
+.month-list dd {
+  line-height: 26px;
+  position: relative;
+  color: #333;
+  padding-left: 10px;
+}
+.month-list dd:after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #333;
+  border-radius: 50%;
+  top: 13px;
+  left: 0;
+}

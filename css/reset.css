@@ -1,0 +1,18 @@
+/*重置样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,button,textarea,p,th,td{ margin: 0; padding: 0; }
+input,img{ border:none;float:left;}
+a{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+ol,ul,li{ list-style: none; }
+table{ border-collapse: collapse; border-spacing: 0; }
+.clearfix:after{content:'\0020';display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*zoom:1;}
+.center{position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;}
+html{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;color: #333;min-width: 800px;}
+
+
+/*公用*/
+.fl{float:left;}
+.fr{float:right;}
+.hide{display:none;}
+.center{position: absolute;top:0;right:0;bottom:0;top:0;margin: auto;}
